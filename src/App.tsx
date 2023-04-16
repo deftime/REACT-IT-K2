@@ -4,14 +4,14 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      THIS is REACT!
+      <AppTitle />
       <Raiting />
       <Accordion />
     </div>
   );
 }
 
-function Raiting () {
+function Raiting() {
   return (
     <>
       <Star />
@@ -23,22 +23,44 @@ function Raiting () {
   )
 }
 
-function Accordion () {
+function Accordion() {
   return (
     <div>
-      <div>Plate</div>
-      <div>
-        <p>Content</p>
-        <p>Content</p>
-        <p>Content</p>
-      </div>
+      <AccPalte />
+      <AccContent />
     </div>
   )
 }
 
-function Star () {
+function Star() {
   return (
     <div>Star</div>
+  )
+}
+
+function AppTitle() {
+  return (
+    <>
+    THIS is REACT!
+    </>
+  )
+}
+
+function AccPalte() {
+  return (
+    <div className="plate">
+      Opener
+    </div>
+  )
+}
+
+function AccContent() {
+  return (
+    <div className="content">
+      <p>Content</p>
+      <p>Content</p>
+      <p>Content</p>
+    </div>
   )
 }
 
