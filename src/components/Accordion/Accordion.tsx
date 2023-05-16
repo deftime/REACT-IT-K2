@@ -1,18 +1,18 @@
 import React from "react";
 
-function Accordion() {
+function Accordion(props: any) {
     return (
         <div>
-            <AccPalte />
+            <AccPlate title={props.title} />
             <AccContent />
         </div>
     )
 }
 
-function AccPalte() {
+function AccPlate(props: any) {
     return (
         <div className="plate">
-            Opener
+            {props.title}
         </div>
     )
 }
