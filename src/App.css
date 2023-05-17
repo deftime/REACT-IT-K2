@@ -2,3 +2,41 @@
   margin: 0;
   padding: 0;
 }
+
+.switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  padding: 30px 50px;
+  border: 2px solid lightgrey;
+}
+
+.btn.on {
+  background-color: green;
+}
+
+.btn.off {
+  background-color: red;
+}
+
+.indicator {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.indicator.on {
+  background-color: green;
+}
+
+.indicator.off {
+  background-color: red;
+}

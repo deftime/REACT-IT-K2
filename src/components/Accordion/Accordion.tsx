@@ -2,25 +2,18 @@ import React from "react";
 
 type AccordionType = {
     title: string,
-    collapse: boolean
+    collapse?: boolean
 }
 
 function Accordion(props: AccordionType) {
 
-    if (props.collapse) {
-        return (
-            <div>
-                <AccPlate title={props.title} />
-            </div>
-        )
-    } else {
-        return (
-            <div>
-                <AccPlate title={props.title} />
-                <AccContent />
-            </div>
-        )
-    }
+    return (
+        <div>
+            <AccPlate title={props.title} />
+            { !props.collapse && <AccContent /> }
+        </div>
+    )
+
 }
 
 function AccPlate(props: any) {
